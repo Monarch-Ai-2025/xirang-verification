@@ -70,7 +70,4 @@ Apache 2.0
 
 **息壤 —— 每一个字都有来处，每一步推理都有证明。**  
 **Xirang — Every word has an origin. Every inference step has a proof.**
-```
-
 ---
-仓库页面刷新后，别人看到的就不再是“工程进度汇报”，而是一份干净、不露底的概念宣言。
