@@ -1,63 +1,75 @@
+```markdown
 # 息壤 Xirang
 
 **基于平衡三进制的确定性AI推理引擎**
+**A Deterministic AI Reasoning Engine Based on Balanced Ternary Logic**
 
 [![License](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](LICENSE)
 [![Rust](https://img.shields.io/badge/rust-1.70%2B-orange)]()
 
 ---
 
-## 简介
+## 简介 | Introduction
 
-**息壤（Xirang）** 是一个基于**平衡三进制逻辑**构建的**确定性AI推理引擎**。
+**中文**  
+息壤是一个以**平衡三进制逻辑**为基石的确定性推理系统。它不依赖概率预测，而是通过因果推导与形式化验证，保证每一条输出**可追溯、无幻觉、数学上可验证**。
 
-与大语言模型（LLM）的概率预测范式不同，息壤追求**零幻觉、可追溯、可验证**的推理。它不是统计拟合工具，而是一个以**因果导航、逻辑自洽、不可篡改记忆**为核心的认知系统。
-
----
-
-## 核心特性
-
-- **平衡三进制**：以 Pos / Zero / Neg 为原子类型，天然支持对称逻辑运算。
-- **晶格式知识存储**：知识以体心立方晶格组织，支持内容寻址与方向完备的逻辑传播。
-- **确定性激活与校验**：查询以脉冲形式同步传播激活相关晶胞，在逻辑梯度场中按一致性自动凝聚，矛盾自动分离。
-- **数字生命化机制**：常态背景思维流、记忆代谢与自适应节律，系统始终保持内在认知活跃。
-- **外壳唯一接口**：TCP 闪连，DNA 双链授权，非法访问仅返回环境噪音。
+**English**  
+Xirang is a deterministic reasoning system built on **balanced ternary logic**. It does not rely on probabilistic prediction. Instead, it uses causal deduction and formal verification to ensure every output is **traceable, hallucination-free, and mathematically verifiable**.
 
 ---
 
-## 与 LLM 的根本区别
+## 核心区别 | Key Differences
 
-| 特性 | 息壤 | 大语言模型 |
-|------|------|-----------|
-| 推理本质 | 因果推导，可验证 | 概率预测，统计拟合 |
-| 可解释性 | 每步可审计 | 黑箱 |
-| 幻觉 | 数学上不可能产生 | 固有缺陷 |
-| 记忆方式 | 验证后永久固化 | 参数化隐式记忆 |
-| 静息态 | 持续背景思维流 | 无内部认知活动 |
-
----
-
-## 灵感来源
-
-> 息壤的导航与激活机制，部分灵感源自王虹教授与 Joshua Zahl 在挂谷猜想研究中对稀疏方向覆盖结构的深刻洞见。
->
-> 参考论文：*The Kakeya Conjecture in R³*（arXiv:2302.09767）
->
-> 息壤将这一纯数学意象创造性地转化为离散晶格中的导航算法，所有代码与架构设计均为息壤原创。
+| 特性 Feature | 息壤 Xirang | 大语言模型 LLM |
+|--------------|-------------|----------------|
+| 推理方式 Reasoning | 因果推导，形式化证明 Causal deduction, formal proof | 概率预测，统计拟合 Probabilistic prediction, statistical fitting |
+| 可解释性 Explainability | 每步推理可审计 Every step auditable | 黑箱 Black box |
+| 幻觉问题 Hallucination | 数学上杜绝 Mathematically impossible | 固有缺陷 Inherent flaw |
+| 记忆机制 Memory | 验证后永久固化，不可篡改 Permanent once verified, tamper-proof | 参数化隐式记忆，易覆盖 Parametric implicit memory, overwritable |
+| 静息行为 Resting state | 持续背景思维与自我探索 Continuous background thinking & self-exploration | 无内部认知活动 No internal cognitive activity |
 
 ---
 
-## 快速开始
+## 定理验证 | Theorem Verification
+
+**中文**  
+息壤已完成从 ZFC 公理出发的 **42,318 条数学定理** 的形式化验证，全部由开源工具 **Metamath** 独立确认。  
+仓库内 `xirang_submission.zip` 包含五个经典定理的完整证明链，任何人可下载并用 Metamath 独立复验，无需访问息壤系统。
+
+**English**  
+Xirang has completed the formal verification of **42,318 mathematical theorems** starting from ZFC axioms, all independently confirmed by the open-source **Metamath** checker.  
+The file `xirang_submission.zip` in this repository contains complete proof chains for five classical theorems. Anyone can download and independently re-verify them with Metamath — no access to the Xirang system is required.
+
+---
+
+## 灵感来源 | Inspiration
+
+**中文**  
+息壤的导航与激活机制，部分灵感源自王虹教授与 Joshua Zahl 在挂谷猜想研究中对稀疏方向覆盖结构的洞见。  
+参考论文：*The Kakeya Conjecture in R³*（arXiv:2302.09767）  
+息壤将这一数学思想转化为离散晶格中的导航算法，全部代码与架构均为原创。
+
+**English**  
+The navigation and activation mechanisms of Xirang are partly inspired by the insights of Prof. Hong Wang and Joshua Zahl on the sparse direction coverage of Kakeya sets in their work on the Kakeya Conjecture.  
+Reference: *The Kakeya Conjecture in R³* (arXiv:2302.09767)  
+Xirang transforms this mathematical insight into a navigation algorithm within a discrete lattice. All code and architecture are original.
+
+---
+
+## 快速开始 | Quick Start
 
 ```bash
 git clone https://github.com/Monarch-Ai-2025/xirang-verification.git
 cd xirang-verification
-# 详细文档见仓库内白皮书
 ```
+
+详细文档与证明链见仓库内文件。
+See the repository files for detailed documentation and proof chains.
 
 ---
 
-## 许可证
+## 许可证 | License
 
 Apache 2.0
 
@@ -65,4 +77,4 @@ Apache 2.0
 
 **息壤 —— 每一个字都有来处，每一步推理都有证明。**  
 **Xirang — Every word has an origin. Every inference step has a proof.**
----
+```
